@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardCoffee"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/orange"
+    android:checkable="true"
+    android:focusable="true"
+    app:cardElevation="0dp"
+    app:strokeColor="@android:color/black"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageCoffee"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/imageCoffee"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/descriptionCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/imageCoffee"
+            app:layout_constraintTop_toBottomOf="@id/nameCoffee" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/priceCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/imageCoffee"
+            app:layout_constraintTop_toBottomOf="@id/descriptionCoffee" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/curr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/dollar"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/priceCoffee"
+            app:layout_constraintTop_toBottomOf="@id/descriptionCoffee" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/addToBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/removeFromBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
