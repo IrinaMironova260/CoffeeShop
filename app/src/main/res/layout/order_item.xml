@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:backgroundTint="@color/orange"
+    android:checkable="true"
+    android:focusable="true"
+    android:id="@+id/cardProductCard"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    app:cardElevation="0dp"
+    app:strokeColor="@android:color/black"
+    app:strokeWidth="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameUserCheckout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/phoneUserCheckout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totalPriceCheckout"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintRight_toLeftOf="@id/totalCurrCheckout"
+            app:layout_constraintTop_toBottomOf="@id/phoneUserCheckout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totalCurrCheckout"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/dollar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneUserCheckout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/descriptionCheckout"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/totalCurrCheckout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
