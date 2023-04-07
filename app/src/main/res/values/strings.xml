@@ -4,15 +4,15 @@
     <string name="coffee">COFFEE</string>
     <string name="card">CARD</string>
     <string name="account">ACCOUNT</string>
-    <string name="dollar">$</string>
+    <string name="dollar">рублей</string>
 
     <string name="clearCard">CLEAR CARD</string>
     <string name="clearOrders">Очистить выбор</string>
     <string name="checkout">Сделать заказ</string>
     <string name="totalOrder">ИТОГО ваш заказ:</string>
-    <string name="yourName">Your Name</string>
-    <string name="yourPhone">Your Phone</string>
-    <string name="submit">SUBMIT</string>
+    <string name="yourName">Ваше имя</string>
+    <string name="yourPhone">Ваш телефон</string>
+    <string name="submit">Подтвердить заказ</string>
     <string name="mainHeader">COSO - MOBILE COFFEE SHOP</string>
     <string name="descriptionCoso">We are happy to make coffee for you and make your day a little better</string>
     <string name="salePropOne">Sale - 10 % </string>

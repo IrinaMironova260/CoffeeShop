@@ -19,4 +19,6 @@ class OrderLocalViewModel(private val orderLocalUseCase: OrderLocalUseCase): Vie
     private fun insert(orderLocalModel: OrderLocalModel) = viewModelScope.launch {
         orderLocalUseCase.insert(orderLocalModel)
     }
+
+    val loadOrder = orderLocalUseCase.loadOrder()
 }

@@ -2,11 +2,13 @@ package com.example.coffeeshop.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import androidx.appcompat.widget.AppCompatImageButton
 import androidx.lifecycle.Observer
 import com.example.coffeeshop.R
 import com.example.coffeeshop.databinding.ActivityMainBinding
+import com.example.coffeeshop.presentation.tabs.Home
+import com.example.coffeeshop.presentation.tabs.account.Account
+import com.example.coffeeshop.presentation.tabs.card.Card
+import com.example.coffeeshop.presentation.tabs.coffee.Coffee
 import com.example.coffeeshop.presentation.viewModels.CardViewModel
 import com.example.coffeeshop.presentation.viewModels.CoffeeViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
