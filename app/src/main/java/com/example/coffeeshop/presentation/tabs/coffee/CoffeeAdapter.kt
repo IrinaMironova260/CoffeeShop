@@ -14,8 +14,7 @@ class CoffeeAdapter(
     private val removeFromCard: (CoffeeModel) -> Unit,
     private val loadCoffeeToCardFromCardProduct
     : (Int, AppCompatImageButton, AppCompatImageButton) -> Unit
-) :
-    RecyclerView.Adapter<CoffeeAdapter.CoffeeHolder>() {
+) :  RecyclerView.Adapter<CoffeeAdapter.CoffeeHolder>() {
 
     private val coffee = ArrayList<CoffeeModel>()
 
@@ -54,17 +53,18 @@ class CoffeeAdapter(
             binding.descriptionCoffee.text = coffeeModel.description
             binding.priceCoffee.text = coffeeModel.price
 
-            binding?.addToBasket?.setOnClickListener(View.OnClickListener {
+            binding?.addToCard?.setOnClickListener(View.OnClickListener {
                 addToCard(coffeeModel)
             })
 
 
-            binding?.removeFromBasket?.setOnClickListener(View.OnClickListener {
+            binding?.removeFromCard?.setOnClickListener(View.OnClickListener {
                 removeFromCard(coffeeModel)
             })
-            loadCoffeeToCardFromCardProduct(coffeeModel.id, binding.addToBasket, binding.removeFromBasket)
-
+            loadCoffeeToCardFromCardProduct(
+                coffeeModel.id,
+                binding.addToCard,
+                binding.removeFromCard)
         }
     }
-
 }

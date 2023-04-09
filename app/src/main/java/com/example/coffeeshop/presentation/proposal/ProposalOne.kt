@@ -1,4 +1,4 @@
-package com.example.coffeeshop.presentation
+package com.example.coffeeshop.presentation.proposal
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

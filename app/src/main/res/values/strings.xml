@@ -1,25 +1,24 @@
 <resources>
-    <string name="app_name">Coffee shop</string>
+    <string name="app_name">Mobile coffee-shop</string>
     <string name="home">HOME</string>
     <string name="coffee">COFFEE</string>
-    <string name="card">CARD</string>
-    <string name="account">ACCOUNT</string>
+    <string name="card">Заказ</string>
+    <string name="account">Аккаунт</string>
     <string name="dollar">рублей</string>
 
-    <string name="clearCard">CLEAR CARD</string>
+    <string name="clearCard">Очистить заказ</string>
     <string name="clearOrders">Очистить выбор</string>
     <string name="checkout">Сделать заказ</string>
     <string name="totalOrder">ИТОГО ваш заказ:</string>
     <string name="yourName">Ваше имя</string>
     <string name="yourPhone">Ваш телефон</string>
     <string name="submit">Подтвердить заказ</string>
-    <string name="mainHeader">COSO - MOBILE COFFEE SHOP</string>
-    <string name="descriptionCoso">We are happy to make coffee for you and make your day a little better</string>
-    <string name="salePropOne">Sale - 10 % </string>
-    <string name="salePropTwo">Sale - 15 % </string>
-    <string name="headerPropOne">Morning moccaccino</string>
-    <string name="headerPropTwo">Morning cappuccino</string>
-    <string name="descriptionProposal">The promotion is valid when ordering from 8 to 10 am</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mainHeader">МОБИЛЬНАЯ КОФЕЙНЯ У ВАС В РУКАХ!</string>
+    <string name="descriptionCoso">Мы рады приготовить для вас кофе и сделать ваш день чуточку лучше!</string>
+    <string name="salePropOne">Скидка -10% </string>
+    <string name="salePropTwo">Скидка -15% </string>
+    <string name="headerPropOne">Наш фирменный мокачино!</string>
+    <string name="headerPropTwo">Наш фирменный каппучино!</string>
+    <string name="descriptionProposal">Акции на утренние заказы с 8 до 12 утра со скидками!</string>
+
 </resources>
