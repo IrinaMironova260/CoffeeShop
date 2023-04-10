@@ -15,21 +15,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageCoffee"
-            android:layout_height="100dp"
             android:layout_width="100dp"
+            android:layout_height="100dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/nameCoffee"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_width="wrap_content"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@id/imageCoffee"
@@ -37,9 +37,9 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/descriptionCoffee"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_width="wrap_content"
             android:text="1"
             android:textColor="@color/black"
             app:layout_constraintLeft_toRightOf="@id/imageCoffee"
@@ -47,40 +47,40 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/priceCoffee"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_width="wrap_content"
             android:textColor="@color/black"
             app:layout_constraintRight_toLeftOf="@id/curr"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/curr"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_width="wrap_content"
             android:text="@string/dollar"
             android:textColor="@color/black"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:background="@drawable/backg_button"
             android:id="@+id/addToCard"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_width="wrap_content"
+            android:background="@drawable/backg_button"
             android:padding="10dp"
             android:src="@drawable/card"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:background="@drawable/backg_button"
             android:id="@+id/removeFromCard"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_width="wrap_content"
+            android:background="@drawable/backg_button"
             android:padding="10dp"
             android:src="@drawable/delete"
             app:layout_constraintBottom_toBottomOf="parent"
